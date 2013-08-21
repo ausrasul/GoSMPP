@@ -847,7 +847,7 @@ func unpackUint(p []byte) (n uint64) {
 	return
 }
 
-// Pack uint into l bytes (big endian) 
+// Pack uint into l bytes (big endian)
 func packUint(n uint64, l uint8) (p []byte) {
 	p = make([]byte, l)
 	for i := uint8(0); i < l; i++ {

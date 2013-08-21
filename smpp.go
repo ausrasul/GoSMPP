@@ -128,7 +128,7 @@ func (smpp *smpp) Unbind() (sequence uint32, err error) {
 	return
 }
 
-// Get response PDU 
+// Get response PDU
 func (smpp *smpp) GetResp(cmd SMPPCommand, sequence uint32) (rpdu PDU, err error) {
 	// Read the header
 	hdr := new(PDUHeader)
